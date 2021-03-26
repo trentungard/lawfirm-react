@@ -12,3 +12,11 @@ body{
 p, ul, nav, li, h2, h3, h4, h5, h6 {
     font-family: 'Source Sans Pro', sans-serif;
 }
+
+.main-container{
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    position: relative;
+    top: 150px;
+    max-width: 1220px;
+}

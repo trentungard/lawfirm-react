@@ -1,0 +1,12 @@
+.image-container{
+    display: flex;
+    position: relative;
+    top: 200px;
+    flex-direction: row;
+    justify-content: center;
+    max-height: 600px;
+    background-color: #e8e8e8;
+    img{
+        max-width: 1440px;
+    }
+}

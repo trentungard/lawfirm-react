@@ -39,7 +39,7 @@ const Header = ({viewWidth}) => {
         )
     } else {
         return(
-            <header>
+            <header style={{"padding": '30px 0 0 0'}}>
                 <div className="wrapper">
                     <div className="logo-container">
                         <img src={logo} alt="Callahan Lovecchio Law Logo"/>
