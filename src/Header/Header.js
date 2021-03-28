@@ -11,8 +11,6 @@ const Header = ({viewWidth}) => {
         setShowMenu(!showMenu);
     }
 
-    console.log(showMenu)
-
     if(viewWidth > 650){
         return(
             <header>
