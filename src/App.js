@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import MainImage from './MainImage';
 import About from './About/About';
 import Practice from './Practice/Practice';
+import Team from './Team/Team';
 
 function App() {
 
@@ -30,6 +31,8 @@ function App() {
         <About />
         <hr />
         <Practice />
+        <hr />
+        <Team />
       </div>
     </div>
   );

@@ -5,13 +5,13 @@ const Banner = () => {
         <div class="banner-container">
             <div class="child-container one">
                 <div class="banner-image-container">
-                    <img src="https://via.placeholder.com/150" />
+                    <img src="https://via.placeholder.com/100" />
                 </div>
                 <h3 class="banner-image-title">Criminal Defense</h3>
             </div>
             <div class="child-container two">
                 <div class="banner-image-container">
-                    <img src="https://via.placeholder.com/150" />
+                    <img src="https://via.placeholder.com/100" />
                 </div>
                 <h3 class="banner-image-title">Workers Compensation</h3>
             </div>
