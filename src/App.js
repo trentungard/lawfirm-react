@@ -5,6 +5,7 @@ import MainImage from './MainImage';
 import About from './About/About';
 import Practice from './Practice/Practice';
 import Team from './Team/Team';
+import Contact from './Contact/Contact';
 
 function App() {
 
@@ -33,6 +34,8 @@ function App() {
         <Practice />
         <hr />
         <Team />
+        <hr />
+        <Contact />
       </div>
     </div>
   );

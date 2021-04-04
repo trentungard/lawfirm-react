@@ -1,0 +1,12 @@
+.contact-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    h2{
+        width: 100%;
+    }
+    .container{
+        width: 45%;
+        border: 2px solid red;
+    }
+}
