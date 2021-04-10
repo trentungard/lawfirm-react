@@ -1,4 +1,5 @@
-import './App.scss'
+import './mediaqueries.scss';
+import './App.scss';
 import Header from './Header/Header';
 import { useState, useEffect } from 'react';
 import MainImage from './MainImage';

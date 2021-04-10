@@ -7,7 +7,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
-        background-color: #D6E5FF;
+        background-color: #0056b3;
         border-radius: 10px;
         padding: 15px;
         .card{
@@ -16,7 +16,11 @@
             flex-direction: column;
             align-items: center;
             min-width: 215px;
+            background-color: transparent;
+            border: none;
             img{
+                margin-top: 15px;
+                border-radius: 150px;
                 max-width: 150px;
             }
             h3, h4, p{
@@ -25,7 +29,7 @@
             }
             p{
                 margin: 0px 25px;
-                color: #aaa;
+                color: #e6e6e6;
                 text-indent: 25px;
             }
         }

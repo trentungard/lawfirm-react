@@ -1,0 +1,46 @@
+@media(max-width: 856px){
+    .contact-container{
+        flex-direction: column;
+        justify-content: flex-start !important;
+        .container{
+            margin: 0;
+        }
+        .contact-form{
+            width: 85%;
+            margin: 0 auto;
+        }
+    }
+    .form-container{
+        margin-top: 320px !important;
+    }
+    .card{
+        h3{
+            text-align: center;
+        }
+    }
+}
+
+@media(max-width: 652px){
+    nav{padding: 20px;}
+}
+
+@media(max-width: 559px){
+    .contact-container{
+        .contact-info{
+            width: 70% !important;
+        }
+        .card{
+            width: 65% !important;
+            margin: 10px auto;
+        }
+    }
+}
+
+@media(max-width: 495px){
+    .banner-container{
+        justify-content: center !important;
+    }
+    .more-container{
+        justify-content: center !important;
+    }
+}

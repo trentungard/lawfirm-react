@@ -1,5 +1,6 @@
 import './Contact.scss';
 import OfficeMap from '../Map/Map';
+import ContactForm from '../Forms/ContactForm';
 
 export default function Contact() {
     return (
@@ -24,16 +25,19 @@ export default function Contact() {
                     Williamsport, Pennsylvania 17701
                     </address>
                 </div>
+            </div>
+            <div className="container">
                 <OfficeMap />
             </div>
             <div className="contact-form container">
-                <form className="form">
+                {/* <form className="form">
                     <input type="text" placeholder="First Name (required)" />
                     <input type="text" placeholder="Last Name (required)" />
                     <input type="text" placeholder="Email Address (required)" />
                     <input type="text" placeholder="Phone Number" />
                     <textarea placeholder="Message" />
-                </form>
+                </form> */}
+                <ContactForm />
             </div>
         </div>
     )
