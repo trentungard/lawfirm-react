@@ -37,10 +37,25 @@
 }
 
 @media(max-width: 495px){
+    .logo-container{
+        img{
+            padding: 15px 0;
+        }
+    }
     .banner-container{
         justify-content: center !important;
     }
     .more-container{
         justify-content: center !important;
+    }
+    .card-container{
+        padding: 10px 0 !important;
+        .card{
+            width: 100% !important;
+        }
+    }
+    .map-container{
+        max-width: 250px !important;
+        max-height: 200px !important;
     }
 }

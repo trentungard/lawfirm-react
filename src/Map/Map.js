@@ -11,10 +11,9 @@ export class MapContainer extends Component {
   render() {
     return (
       <Map
-        className="test"
+        className="map-container"
         google={this.props.google}
         zoom={14}
-        // style={mapStyles}
         initialCenter={{
          lat: 41.24049963025173,
          lng: -77.01126125983575
