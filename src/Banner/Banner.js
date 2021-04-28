@@ -1,17 +1,18 @@
 import './Banner.scss';
+import { Law, WorkersComp } from '../assets/Icons'
 
 const Banner = () => {
     return(
         <div class="banner-container">
             <div class="child-container one">
                 <div class="banner-image-container">
-                    <img src="https://via.placeholder.com/100" />
+                    <Law className="law-icon" />
                 </div>
-                <h3 class="banner-image-title">Criminal Defense</h3>
+                <h3 class="banner-image-title" id="team">Criminal Defense</h3>
             </div>
             <div class="child-container two">
                 <div class="banner-image-container">
-                    <img src="https://via.placeholder.com/100" />
+                    <WorkersComp />
                 </div>
                 <h3 class="banner-image-title">Workers Compensation</h3>
             </div>

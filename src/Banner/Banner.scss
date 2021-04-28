@@ -12,10 +12,7 @@
         min-width: 150px;
         .banner-image-container{
             display: flex;
-            img{
-                border-radius: 90px;
-                margin: 0 auto;
-            }
+            justify-content: center;
         }
         .banner-image-title{           
             text-align: center;

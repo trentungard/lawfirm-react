@@ -7,6 +7,7 @@ import About from './About/About';
 import Practice from './Practice/Practice';
 import Team from './Team/Team';
 import Contact from './Contact/Contact';
+import Footer from './Footer/Footer';
 
 function App() {
 
@@ -38,6 +39,7 @@ function App() {
         <hr />
         <Contact />
       </div>
+      <Footer />
     </div>
   );
 }

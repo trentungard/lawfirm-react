@@ -59,7 +59,10 @@ header{
                         margin: 0 10px;
                     }
                     li:hover{
-                        font-weight: bold;
+                        opacity: 0.8;
+                        a:hover{
+                            text-decoration: none !important;
+                        }
                     }
                 }
             }

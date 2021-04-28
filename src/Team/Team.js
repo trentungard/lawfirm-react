@@ -1,4 +1,6 @@
 import Card from '../Card/Card';
+import ChrisPhoto from '../assets/chris.png';
+import MattPhoto from '../assets/matt.jpeg';
 import './Team.scss';
 
 const chrisDesctiption = {
@@ -16,9 +18,10 @@ const Team = () => {
         <div className="team-container">
             <h2 class="title">Our Team</h2>
             <div className="card-container">
-                <Card className="card" src="https://via.placeholder.com/150" name="Christopher Lovecchio" title="Esquire" shortDescription={chrisDesctiption.short} longDescription={chrisDesctiption.long}/>
-                <Card className="card" src="https://via.placeholder.com/150" name="Matthew Diemer" title="Esquire" shortDescription={mattDescription.short} longDescription={mattDescription.long}/>
+                <Card className="card" src={ChrisPhoto} name={"Christopher Lovecchio"} title="Esquire" shortDescription={chrisDesctiption.short} longDescription={chrisDesctiption.long}/>
+                <Card className="card" src={MattPhoto} name="Matthew Diemer" title="Esquire" shortDescription={mattDescription.short} longDescription={mattDescription.long}/>
             </div>
+            <span id="contact" style={{position: 'relative', top: '-100px'}}></span>
         </div>
     )
 }
