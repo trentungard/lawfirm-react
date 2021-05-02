@@ -15,7 +15,7 @@ export default function Contact() {
                     <h4>Phone:</h4>
                     <a href="tel: 5703233772">(570) 323-3772</a>
                     <h4>Fax:</h4>
-                    <a>(570) 323-8647</a>
+                    <p>(570) 323-8647</p>
                 </div>
                 <div className="contact-item">
                     <h4>Address:</h4>
@@ -30,13 +30,6 @@ export default function Contact() {
                 <OfficeMap />
             </div>
             <div className="contact-form container">
-                {/* <form className="form">
-                    <input type="text" placeholder="First Name (required)" />
-                    <input type="text" placeholder="Last Name (required)" />
-                    <input type="text" placeholder="Email Address (required)" />
-                    <input type="text" placeholder="Phone Number" />
-                    <textarea placeholder="Message" />
-                </form> */}
                 <ContactForm />
             </div>
         </div>

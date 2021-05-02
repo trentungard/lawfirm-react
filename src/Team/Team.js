@@ -16,7 +16,7 @@ const mattDescription = {
 const Team = () => {
     return(
         <div className="team-container">
-            <h2 class="title">Our Team</h2>
+            <h2 className="title">Our Team</h2>
             <div className="card-container">
                 <Card className="card" src={ChrisPhoto} name={"Christopher Lovecchio"} title="Esquire" shortDescription={chrisDesctiption.short} longDescription={chrisDesctiption.long}/>
                 <Card className="card" src={MattPhoto} name="Matthew Diemer" title="Esquire" shortDescription={mattDescription.short} longDescription={mattDescription.long}/>

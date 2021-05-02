@@ -5,7 +5,10 @@ footer{
     top: 100px;
     border-top: 2px solid white;
     background-color: $cl-blue;
+    display: flex;
+    justify-content: center;
     .footer{
+        width: 100%;
         max-width: 1440px;
         display: flex;
         flex-wrap: wrap;

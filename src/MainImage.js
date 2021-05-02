@@ -1,10 +1,12 @@
-import img from './assets/gavel.jpg';
+import img from './assets/lawfirm.jpeg';
 import './MainImage.scss';
 
 const MainImage = () => {
     return(
         <div className="image-container">
-            <img id="about" src={img} width={'100%'} alt={"Office of Callahan Lovecchio Law"}/>
+            <div className="blur-container">
+                <img id="about" src={img} width={'100%'} alt={"Office of Callahan Lovecchio Law"}/>
+            </div>
         </div>
     )
 }

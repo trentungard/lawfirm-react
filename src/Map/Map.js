@@ -2,11 +2,7 @@ import { Component } from 'react';
 import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
 import './Map.scss';
 
-// const mapStyles = {
-//   maxWidth: '400px',
-//   maxHeight: '400px'
-// };
-
+// This is what is causing the error in the console. 
 export class MapContainer extends Component {
   render() {
     return (

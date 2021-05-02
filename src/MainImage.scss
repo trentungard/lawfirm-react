@@ -2,11 +2,19 @@
     display: flex;
     position: relative;
     top: 200px;
-    flex-direction: row;
+    background-color: whitesmoke;
     justify-content: center;
-    max-height: 600px;
-    background-color: #e8e8e8;
-    img{
-        max-width: 1440px;
+    .blur-container{
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        justify-content: center;
+        max-height: 600px;
+        width: 100%;
+        backdrop-filter: blur(10px);
+        img{
+            max-width: 1380px;
+            opacity: 100%;
+        }
     }
 }

@@ -24,7 +24,8 @@ function App() {
 
   window.addEventListener('resize', updateViewWidth);
 
-  console.log(viewWidth)
+  console.log('HELLO! The errors regarding using unsafe componentWillReceiveProps and componentDidUpdate are from the react library for using the Google Maps API. These are not errors I created.')
+  console.log('By the way, I am job hunting! Feel free to visit my website to view my resume or to find my contact information. www.trentungard.com')
 
   return (
     <div className="App">
