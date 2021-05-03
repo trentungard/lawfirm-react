@@ -8,14 +8,14 @@ const Card = ({className, src, name, title, shortDescription, longDescription}) 
 
     return isExpanded ? 
         <div className={className}>
-            <img src={`${src}`} />
+            <img src={`${src}`} alt="Photo of Chris"/>
             <h3>{name}</h3>
             <h4>{title}</h4>
             <p>{longDescription}</p>
             <MdExpandMore className="rotated-carot" style={{transform: 'rotate(180deg)'}} size={30} fill="whitesmoke" onClick={() => setIsExpanded(!isExpanded)}/>
         </div>    
         :
-        <div className={className}>
+        <div className={className} alt="Photo of Matt">
             <img src={`${src}`} />
             <h3>{name}</h3>
             <h4>{title}</h4>
