@@ -1,6 +1,7 @@
 import axios from 'axios';
 
 const url = process.env.REACT_APP_PRODUCTION_URL || 'http://localhost:3001';
+console.log(url);
 
 export const sendEmail = (firstName, lastName, email, phoneNumber, message) => {
     const obj = {
