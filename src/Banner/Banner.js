@@ -6,13 +6,13 @@ const Banner = () => {
         <div className="banner-container">
             <div className="child-container one">
                 <div className="banner-image-container">
-                    <Law className="law-icon" />
+                    <Law className="law-icon icon" />
                 </div>
                 <h3 className="banner-image-title" id="team">Criminal Defense</h3>
             </div>
             <div className="child-container two">
                 <div className="banner-image-container">
-                    <WorkersComp />
+                    <WorkersComp className="icon" />
                 </div>
                 <h3 className="banner-image-title">Workers Compensation</h3>
             </div>

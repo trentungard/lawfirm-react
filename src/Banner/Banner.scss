@@ -13,6 +13,9 @@
         .banner-image-container{
             display: flex;
             justify-content: center;
+            .icon{
+                min-width: 85px;
+            }
         }
         .banner-image-title{           
             text-align: center;
