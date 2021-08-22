@@ -2,7 +2,6 @@ import { Component } from 'react';
 import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
 import './Map.scss';
 
-console.log(process.env.REACT_APP_API_KEY)
 // This is what is causing the error in the console. 
 export class MapContainer extends Component {
   render() {
