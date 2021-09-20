@@ -1,8 +1,19 @@
 import './Contact.scss';
 import OfficeMap from '../Map/Map';
 import ContactForm from '../Forms/ContactForm';
+import emailjs from 'emailjs-com';
 
 export default function Contact() {
+
+    const sendEmail = async ( e ) => {
+        e.preventDefault();
+
+        await emailjs.sendForm('service_oqejgjf', 'template_6yamx5v', e.target, 'user_sBlh7feJ2AI8wbcDyZUlD')
+            .then((res) => console.log(res))
+            .catch((e) => console.error(e, 'error'))
+        return 
+    }
+
     return (
         <div className="contact-container">
             <h2 className="title">Contact Us</h2>
@@ -30,7 +41,9 @@ export default function Contact() {
                 <OfficeMap />
             </div>
             <div className="contact-form container">
-                <ContactForm />
+                <ContactForm 
+                    sendEmail={sendEmail}
+                />
             </div>
         </div>
     )

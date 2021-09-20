@@ -1,13 +1,14 @@
+import { sendForm } from 'emailjs-com';
 import { useState } from 'react';
 import { Form, Button, Alert, Spinner } from 'react-bootstrap';
-import {sendEmail} from '../Helpers/sendEmail';
+// import {sendEmail} from '../Helpers/sendEmail';
 import './ContactForm.scss';
 
-export default function ContactForm() {
+export default function ContactForm({sendEmail}) {
     const [firstName, setFirstName] = useState();
     const [lastName, setLastName] = useState();
     const [email, setEmail] = useState();
-    const [phoneNumber, setPhoneNumber] = useState();
+    const [phone, setPhone] = useState();
     const [message, setMessage] = useState();
     const [showAlert, setShowAlert] = useState(false);
     const [alertMessage, setAlertMessage] = useState('');
@@ -16,7 +17,7 @@ export default function ContactForm() {
     const updateFirstName = (e) => setFirstName(e.target.value);
     const updateLastName = (e) => setLastName(e.target.value);
     const updateEmail = (e) => setEmail(e.target.value);
-    const updatePhonenumber = (e) => setPhoneNumber(e.target.value);
+    const updatePhonenumber = (e) => setPhone(e.target.value);
     const updateMessage = (e) => setMessage(e.target.value);
 
     const emailRe = new RegExp('@');
@@ -30,7 +31,7 @@ export default function ContactForm() {
         }, 8000)
     }
 
-    const submitForm = async () => {
+    const submitForm = async (e) => {
         setIsLoading(true)
         if(!firstName || !lastName || !email || !message){
             updateAlertMessage('Please fill out all required fields.');
@@ -39,12 +40,12 @@ export default function ContactForm() {
             updateAlertMessage('Please provide a valid email address.');
             setIsLoading(false);
         } else {
-            await sendEmail(firstName, lastName, email, phoneNumber, message)
+            await sendEmail(e, {firstName, lastName, email, phone, message})
                 .then(() => {
                     setFirstName('');
                     setLastName('');
                     setEmail('');
-                    setPhoneNumber('');
+                    setPhone('');
                     setMessage('');
                 });
             setIsLoading(false); 
@@ -53,7 +54,7 @@ export default function ContactForm() {
 
 
     return (
-        <Form className="form-container">
+        <Form className="form-container" onSubmit={(e) => submitForm(e)}>
             <Alert hidden={!showAlert} variant="danger">{ alertMessage }</Alert>
             <Form.Group>
                 <Form.Label>First Name<span style={{color:"red"}}>*</span></Form.Label>
@@ -69,13 +70,20 @@ export default function ContactForm() {
             </Form.Group>
             <Form.Group>
                 <Form.Label>Phone Number</Form.Label>
-                <Form.Control value={phoneNumber} onChange={(e) => updatePhonenumber(e)} type="tel" name="number" placeholder="Phone Number"  pattern="[0-9]" />
+                <Form.Control 
+                    value={phone}
+                    onChange={(e) => updatePhonenumber(e)}
+                    type="tel" 
+                    name="number" 
+                    placeholder="Phone Number"  
+                    // pattern="[0-9]" 
+                />
             </Form.Group>
             <Form.Group>
                 <Form.Label>Message<span style={{color:"red"}}>*</span></Form.Label>
                 <Form.Control value={message} onChange={(e) => updateMessage(e)} as="textarea" name="message" rows={4} placeholder="Message (required)" />
             </Form.Group>
-            <Button onClick={submitForm}>
+            <Button type="submit">
             <span>Submit</span>
             <Spinner  
                 animation="border"
