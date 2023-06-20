@@ -24,8 +24,6 @@ function App() {
 
   window.addEventListener('resize', updateViewWidth);
 
-  console.log('The developer of this site is job hunting! Feel free to visit my website to view my resume or to find my contact information. www.trentungard.com')
-
   return (
     <div className="App">
       <Header viewWidth={viewWidth} />

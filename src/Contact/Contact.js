@@ -20,7 +20,7 @@ export default function Contact() {
             <div className="contact-info container">
                 <div className="contact-item">
                     <h4>Email:</h4>
-                    <a href="mailto:contact@callahanlovecchiolaw.com?subject=Consultation">contact@callahanlovecchiolaw.com</a>
+                    <a href="mailto:bradistopper@icloud.com?subject=Contact From Website">bradistopper@icloud.com</a>
                 </div>
                 <div className="contact-item">
                     <h4>Phone:</h4>
@@ -40,11 +40,11 @@ export default function Contact() {
             <div className="container">
                 <OfficeMap />
             </div>
-            <div className="contact-form container">
+            {/* <div className="contact-form container">
                 <ContactForm 
                     sendEmail={sendEmail}
                 />
-            </div>
+            </div> */}
         </div>
     )
 }
