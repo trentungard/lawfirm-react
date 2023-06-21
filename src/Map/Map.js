@@ -1,26 +1,20 @@
-import { Component } from 'react';
-import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
+import GoogleMapReact from 'google-map-react';
 import './Map.scss';
 
-// This is what is causing the error in the console. 
-export class MapContainer extends Component {
-  render() {
-    return (
-      <Map
+export default function MapContainer() {
+  return (
+    <div style={{ height: '400px', width: '100%' }}>
+      <GoogleMapReact
         className="map-container"
-        google={this.props.google}
-        zoom={14}
-        initialCenter={{
-         lat: 41.24049963025173,
-         lng: -77.01126125983575
+        // google={this.props.google}
+        // bootstrapURLKeys={{ key:  }}
+        defaultZoom={14}
+        defaultCenter={{
+          lat: 41.24049963025173,
+          lng: -77.01126125983575
         }}
-      >
-        <Marker lat='41.24049963025173' lng='-77.01126125983575' />
-      </Map>
-    );
-  }
+      />
+        <div lat='41.24049963025173' lng='-77.01126125983575' />
+    </div>
+  );
 }
-
-export default GoogleApiWrapper({
-  apiKey: process.env.REACT_APP_API_KEY
-})(MapContainer);

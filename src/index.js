@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 
 const trackingID = process.env.REACT_APP_TRACKING_ID;
 ReactGA.initialize(trackingID);
-ReactGA.pageview(window.location.pathname + window.location.search);
+ReactGA.send({ hitType: "pageview", page: '/' });
 
 ReactDOM.render(
   <React.StrictMode>

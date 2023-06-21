@@ -1,18 +1,18 @@
 import './Contact.scss';
 import OfficeMap from '../Map/Map';
-import ContactForm from '../Forms/ContactForm';
-import emailjs from 'emailjs-com';
+// import ContactForm from '../Forms/ContactForm';
+// import emailjs from 'emailjs-com';
 
 export default function Contact() {
 
-    const sendEmail = async ( e ) => {
-        e.preventDefault();
+    // const sendEmail = async ( e ) => {
+    //     e.preventDefault();
 
-        await emailjs.sendForm('service_oqejgjf', 'template_6yamx5v', e.target, 'user_sBlh7feJ2AI8wbcDyZUlD')
-            .then((res) => console.log(res))
-            .catch((e) => console.error(e, 'error'))
-        return 
-    }
+    //     await emailjs.sendForm('service_oqejgjf', 'template_6yamx5v', e.target, 'user_sBlh7feJ2AI8wbcDyZUlD')
+    //         .then((res) => console.log(res))
+    //         .catch((e) => console.error(e, 'error'))
+    //     return 
+    // }
 
     return (
         <div className="contact-container">
